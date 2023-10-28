@@ -135,7 +135,7 @@ export default function ProductDetail() {
       <Helmet>
         <title>{product.name} | Product Detail</title>
         <meta name='description' content='Này là product detail' />
-
+        <link rel='canonical' href={`https://shopee-clone-lyart-seven.vercel.app/product/${nameId}`} />
         <meta
           property='og:url'
           content={`https://shopee-clone-lyart-seven.vercel.app/product/${nameId}`}
