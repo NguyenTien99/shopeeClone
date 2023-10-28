@@ -21,6 +21,7 @@ export default function ProductDetail() {
   const [buyCount, setBuyCount] = useState(1)
   const { nameId } = useParams()
   const id = getIdFromNameId(nameId as string)
+  console.log(id)
   const { data: productDetailData } = useQuery({
     queryKey: ['product', id],
     queryFn: () => {
