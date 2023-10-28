@@ -143,7 +143,7 @@ export default function ProductDetail() {
         <meta property='og:type' content='article' />
         <meta property='og:title' content='title product detail' />
         <meta property='og:description' content='Đây description là product detail' />
-        <meta property='og:image' content='/public/images/photo-1544717302-de2939b7ef71 (image).png' />
+        <meta property='og:image' content='/images/photo-1544717302-de2939b7ef71 (image).png' />
       </Helmet>
       <div className='container'>
         <div className='bg-white p-4 shadow'>
