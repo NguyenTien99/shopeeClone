@@ -132,7 +132,7 @@ export default function ProductDetail() {
   if (!product) return null
   return (
     <div className='bg-gray-200 py-6'>
-      <Helmet>
+      {/* <Helmet>
         <title>{product.name} | Product Detail</title>
         <meta name='description' content='Này là product detail' />
 
@@ -148,7 +148,7 @@ export default function ProductDetail() {
           property='og:image'
           content='https://shopee-clone-lyart-seven.vercel.app/images/photo-1544717302-de2939b7ef71%20(image).png'
         />
-      </Helmet>
+      </Helmet> */}
       <div className='container'>
         <div className='bg-white p-4 shadow'>
           <div className='grid grid-cols-12 gap-9'>
