@@ -138,13 +138,16 @@ export default function ProductDetail() {
 
         <meta
           property='og:url'
-          content='https://fullstack.edu.vn/courses/lap-trinh-c-co-ban-toi-nang-cao'
+          content={`https://shopee-clone-lyart-seven.vercel.app/product/${nameId}`}
           data-react-helmet='true'
         />
         <meta property='og:type' content='article' />
         <meta property='og:title' content='title product detail' />
         <meta property='og:description' content='Đây description là product detail' />
-        <meta property='og:image' content='/images/photo-1544717302-de2939b7ef71 (image).png' />
+        <meta
+          property='og:image'
+          content='https://shopee-clone-lyart-seven.vercel.app/images/photo-1544717302-de2939b7ef71%20(image).png'
+        />
       </Helmet>
       <div className='container'>
         <div className='bg-white p-4 shadow'>
