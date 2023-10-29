@@ -7,6 +7,7 @@ import App from 'src/App'
 import './index.css'
 import { AppProvider } from './contexts/app.context'
 import ErrorBoundary from './components/ErrorBoundary'
+import { HelmetProvider } from 'react-helmet-async'
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -19,16 +20,18 @@ const queryClient = new QueryClient({
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
     <BrowserRouter>
-      <QueryClientProvider client={queryClient}>
-        <Suspense>
-          <AppProvider>
-            <ErrorBoundary>
-              <App />
-            </ErrorBoundary>
-          </AppProvider>
-        </Suspense>
-        <ReactQueryDevtools initialIsOpen={false} />
-      </QueryClientProvider>
+      <HelmetProvider>
+        <QueryClientProvider client={queryClient}>
+          <Suspense>
+            <AppProvider>
+              <ErrorBoundary>
+                <App />
+              </ErrorBoundary>
+            </AppProvider>
+          </Suspense>
+          <ReactQueryDevtools initialIsOpen={false} />
+        </QueryClientProvider>
+      </HelmetProvider>
     </BrowserRouter>
   </React.StrictMode>
 )

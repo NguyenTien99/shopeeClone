@@ -13,6 +13,7 @@ import purchaseApi from 'src/apis/purchase.api'
 import { purchaseStatus } from 'src/constants/purchase'
 import { toast } from 'react-toastify'
 import path from 'src/constants/path'
+import { Helmet } from 'react-helmet-async'
 
 export default function ProductDetail() {
   const navigate = useNavigate()
@@ -131,6 +132,10 @@ export default function ProductDetail() {
   if (!product) return null
   return (
     <div className='bg-gray-200 py-6'>
+      <Helmet>
+        <title>trang product detail shopee clone</title>
+        <meta name='description' content='đây là description trang product detail shopee clone' data-rh='true' />
+      </Helmet>
       <div className='container'>
         <div className='bg-white p-4 shadow'>
           <div className='grid grid-cols-12 gap-9'>
