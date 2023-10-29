@@ -13,7 +13,6 @@ import purchaseApi from 'src/apis/purchase.api'
 import { purchaseStatus } from 'src/constants/purchase'
 import { toast } from 'react-toastify'
 import path from 'src/constants/path'
-import { Helmet } from 'react-helmet'
 
 export default function ProductDetail() {
   const navigate = useNavigate()
@@ -132,23 +131,6 @@ export default function ProductDetail() {
   if (!product) return null
   return (
     <div className='bg-gray-200 py-6'>
-      {/* <Helmet>
-        <title>{product.name} | Product Detail</title>
-        <meta name='description' content='Này là product detail' />
-
-        <meta
-          property='og:url'
-          content={`https://shopee-clone-lyart-seven.vercel.app/product/${nameId}`}
-          data-react-helmet='true'
-        />
-        <meta property='og:type' content='article' />
-        <meta property='og:title' content='title product detail' />
-        <meta property='og:description' content='Đây description là product detail' />
-        <meta
-          property='og:image'
-          content='https://shopee-clone-lyart-seven.vercel.app/images/photo-1544717302-de2939b7ef71%20(image).png'
-        />
-      </Helmet> */}
       <div className='container'>
         <div className='bg-white p-4 shadow'>
           <div className='grid grid-cols-12 gap-9'>
