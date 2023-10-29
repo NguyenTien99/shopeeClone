@@ -1,7 +1,6 @@
 import { yupResolver } from '@hookform/resolvers/yup'
 import { useMutation } from '@tanstack/react-query'
 import { useContext } from 'react'
-import { Helmet } from 'react-helmet-async'
 
 import { useForm } from 'react-hook-form'
 import { Link, useNavigate } from 'react-router-dom'
@@ -13,6 +12,7 @@ import { AppContext } from 'src/contexts/app.context'
 import { ErrorResponse } from 'src/types/utils.type'
 import { Schema, schema } from 'src/utils/rule'
 import { isAxiosUnprocessableEntityError } from 'src/utils/utils'
+import { Helmet } from 'react-helmet-async'
 
 type FormData = Pick<Schema, 'email' | 'password'>
 const loginSchema = schema.pick(['email', 'password'])
@@ -56,8 +56,14 @@ export default function Login() {
   return (
     <div className='bg-orange'>
       <Helmet>
-        <title>Login trang shopee clone</title>
-        <meta name='description' content='đây là description login Shoppee clone ' data-rh='true' />
+        <title>Đăng nhập | Shopee Clone</title>
+        <meta name='description' content='Đăng nhập vào dự án Shopee Clone' />
+
+        <meta property='og:url' content='https://shopee-clone-lyart-seven.vercel.app/login' />
+        <meta property='og:type' content='article' />
+        <meta property='og:title' content='title html' />
+        <meta property='og:description' content='Đây description là index.html' />
+        <meta property='og:image' content='https://shopee-clone-lyart-seven.vercel.app/images/SHAZAM.jpg' />
       </Helmet>
       <div className='container'>
         <div className='grid grid-cols-1 py-12 lg:grid-cols-5 lg:py-32 lg:pr-10'>

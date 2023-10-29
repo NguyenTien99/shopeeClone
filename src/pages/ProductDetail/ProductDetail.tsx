@@ -133,8 +133,17 @@ export default function ProductDetail() {
   return (
     <div className='bg-gray-200 py-6'>
       <Helmet>
-        <title>trang product detail shopee clone</title>
-        <meta name='description' content='đây là description trang product detail shopee clone' data-rh='true' />
+        <title>{product.name} | Shopee Clone</title>
+        <meta name='description' content={product.description} />
+
+        <meta property='og:url' content={`https://shopee-clone-lyart-seven.vercel.app/${nameId}`} />
+        <meta property='og:type' content='article' />
+        <meta property='og:title' content='title product' />
+        <meta property='og:description' content='Đây description là product' />
+        <meta
+          property='og:image'
+          content='https://shopee-clone-lyart-seven.vercel.app/images/photo-1544717302-de2939b7ef71 (image).png'
+        />
       </Helmet>
       <div className='container'>
         <div className='bg-white p-4 shadow'>
