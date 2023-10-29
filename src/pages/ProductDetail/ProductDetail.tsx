@@ -138,7 +138,7 @@ export default function ProductDetail() {
 
         <meta property='og:url' content={`https://shopee-clone-lyart-seven.vercel.app/${nameId}`} />
         <meta property='og:type' content='article' />
-        <meta property='og:title' content='title product' />
+        <meta property='og:title' content='title product detail' />
         <meta property='og:description' content='Đây description là product' />
         <meta
           property='og:image'

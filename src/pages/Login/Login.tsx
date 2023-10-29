@@ -61,8 +61,8 @@ export default function Login() {
 
         <meta property='og:url' content='https://shopee-clone-lyart-seven.vercel.app/login' />
         <meta property='og:type' content='article' />
-        <meta property='og:title' content='title html' />
-        <meta property='og:description' content='Đây description là index.html' />
+        <meta property='og:title' content='title login' />
+        <meta property='og:description' content='Đây description là login' />
         <meta property='og:image' content='https://shopee-clone-lyart-seven.vercel.app/images/SHAZAM.jpg' />
       </Helmet>
       <div className='container'>
